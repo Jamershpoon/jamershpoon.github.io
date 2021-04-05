@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <title>Static Website Assignment</title>
+
+    <body>
+        <div class="content">     
+            <div class="containNav">
+                <img class="logoImg" src="images/logo1.png">
+
+                <ul id="topnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="tasklist.html">Tasklist</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a class="active" href="contactform.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="Pads">
+                <div class="formContain">
+                    <form action="https://formspree.io/f/{form_id}" method="post">
+                        
+                        <label>First Name</label>
+                        <input type="text" name="firstname" id="fname" placeholder="Your name..." />
+
+                        <label>Last Name</label>
+                        <input type="text" name="lastname" id="lname" placeholder="Your last name..." />
+
+                        <label>Your Email</label>
+                        <input type="email" name="Email" id="email" placeholder="youremail@example.com" />
+
+                        <label>Query Type:</label>
+                        <select id="query" name="query">
+                            <option value="general">General</option>
+                            <option value="commission">Commission</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label>Message:</label>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+
+                        <input type="submit" value="Submit">                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
