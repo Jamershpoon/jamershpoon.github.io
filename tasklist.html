@@ -2,61 +2,86 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/teststyle.css">
     </head>
-    
-    <title>Static Website Assignment</title>
 
     <body>
         <div class="content">
-            
-            <div class="containNav">
-                <img class="logoImg" src="images/logo1.png">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">                                           
+                            <ul class="nav nav-pills mb-3">
+                                <li><img class="logoImg" src="images/logo1.png"></li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="cv.html">CV</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link active" href="tasklist.html">Tasklist</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="stories.html">Stories</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                
+                </div>
+            </header>
 
-                <ul id="topnav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a class="active" href="tasklist.html">Tasklist</a></li>
-                    <li><a href="stories.html">Stories</a></li>
-                    <li><a href="contactform.html">Contact</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Digital Play & Practice</h2>
+                        <ol class="listTask">
+                            <li>Look over each weeks material and make notes on themes.</li>
+                            <li>Assignment 2: 2000 word essay on conepts of your project.</li>
+                        </ol>
+
+                        <h2>Online & Mobile Media</h2>
+                        <ol class="listTask">
+                            <li>Static Website Assignment</li>
+                            <ul class="innerTask">
+                                <li>Five page website</li>
+                                <li>Do the basics</li>
+                            </ul>                    
+                        </ol>
+
+                        <h2>Digital Film and Culture</h2>
+                        <ol class="listTask">
+                            <li>Video Essay on a theme of your choice</li>
+                            <li>Twine interactive story assignment</li>
+                        </ol>
+
+                        <h2>Digital Media Final Project</h2>
+                        <ol class="listTask">
+                            <li>Story Telling and Effect</li>
+                            <ul class="innerTask">
+                                <li>Research various elements of storytelling</li>
+                                <li>Make notes on different mediums stories are told through</li>
+                                <li>Develop up to 3 examples</li>
+                                <li>Record process in a portfolio type</li>
+                            </ul>                    
+                        </ol>
+                    </div>
+                </div>             
+            </div>        
+
+            <div class="container">
+                <footer>
+                    <p><strong> Mr. Jamie Chambers <a href="thisismyemail@thisisanemail.com">thisismyemail@thisisanemail.com</a></strong></p>
+                </footer>
             </div>
-
-            <h1>Tasklist for Semester 2 of my Masters in Digital Media</h1>
-
-            <div class="Pads">
-                <h2>Digital Play & Practice</h2>
-                <ol class="listTask">
-                    <li>Look over each weeks material and make notes on themes.</li>
-                    <li>Assignment 2: 2000 word essay on conepts of your project.</li>
-                </ol>
-
-                <h2>Online & Mobile Media</h2>
-                <ol class="listTask">
-                    <li>Static Website Assignment</li>
-                    <ul class="innerTask">
-                        <li>Five page website</li>
-                        <li>Do the basics</li>
-                    </ul>                    
-                </ol>
-
-                <h2>Digital Film and Culture</h2>
-                <ol class="listTask">
-                    <li>Video Essay on a theme of your choice</li>
-                    <li>Twine interactive story assignment</li>
-                </ol>
-
-                <h2>Digital Media Final Project</h2>
-                <ol class="listTask">
-                    <li>Story Telling and Effect</li>
-                    <ul class="innerTask">
-                        <li>Research various elements of storytelling</li>
-                        <li>Make notes on different mediums stories are told through</li>
-                        <li>Develop up to 3 examples</li>
-                        <li>Record process in a portfolio type</li>
-                    </ul>                    
-                </ol>
-            </div>
-        </div>
+        </div>      
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

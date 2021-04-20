@@ -2,40 +2,70 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/teststyle.css">
     </head>
-
-    <title>Static Website Assignment</title>
 
     <body>
         <div class="content">
-            
-            <div class="containNav">
-                <img class="logoImg" src="images/logo1.png">
-
-                <ul id="topnav">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="tasklist.html">Tasklist</a></li>
-                    <li><a href="stories.html">Stories</a></li>
-                    <li><a href="contactform.html">Contact</a></li>
-                </ul>
-            </div>
-       
-            <h1>This is the Introduction</h1>
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">                                           
+                            <ul class="nav nav-pills mb-3">
+                                <li><img class="logoImg" src="images/logo1.png"></li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cv.html">CV</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="tasklist.html">Tasklist</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="stories.html">Stories</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#pills-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                
+                </div>
+            </header>
 
             <div class="container">
-                <div class="text">
-                    <p>
-                        Currently taking part in a Masters course in Digital Media in NUIG. An artistic at heart, Jamie has always had an interest in anything creative from drawing to animation. He practices more or less every day and works to improve with each idea he has. Recently he has started working on writing short stories and using them as templates for drawings or animations. his grammar still needs work.
-                        <br><br>                        
-                        Has experience working in a retail environment during the Christmas season. Experience as a teacher in the United Arab Emirates, teaching Creative Design and Innovation at secondary school level. Highly motivated and hard-working graduate of a BSc. in Computer and Energy Systems and BEng. in Computer and Electronic Engineering in GMIT. Strong interests in technology, digital art and improving on technical ability. Have a creative and enthusiastic approach to learning and improving skills especially when it comes to art.
-                    </p>
-                </div>
-                
-                <img class="myImage" src="images/logo2.jpg">
-                
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>This is the Introduction</h1>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Currently taking part in a Masters course in Digital Media in NUIG. An artistic at heart, Jamie has always had an interest in anything creative from drawing to animation. He practices more or less every day and works to improve with each idea he has. Recently he has started working on writing short stories and using them as templates for drawings or animations. his grammar still needs work.
+                            <br><br>                        
+                            Have experience working in a retail environment during the Christmas season. Experience as a teacher in the United Arab Emirates, teaching Creative Design and Innovation at secondary school level. Highly motivated and hard-working graduate of a BSc. in Computer and Energy Systems and BEng. in Computer and Electronic Engineering in GMIT. Strong interests in technology, digital art and improving on technical ability. Have a creative and enthusiastic approach to learning and improving skills especially when it comes to art.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="myImage" src="images/logo2.jpg">
+                    </div>
+                </div>             
+            </div>        
+
+            
+                <div class="spacer"></div>
+            
+
+            <div class="container">
+                <footer>
+                    <p><strong> Mr. Jamie Chambers <a href="thisismyemail@thisisanemail.com">thisismyemail@thisisanemail.com</a></strong></p>
+                </footer>
             </div>
-        </div>
+        </div>      
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
     </body>
 </html>

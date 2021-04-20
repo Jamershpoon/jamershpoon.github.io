@@ -2,39 +2,116 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/teststyle.css">        
     </head>
-    
-    <title>Static Website Assignment</title>
 
     <body>
         <div class="content">
-            
-            <div class="containNav">
-                <img class="logoImg" src="images/logo1.png">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">                                           
+                            <ul class="nav nav-pills mb-3">
+                                <li><img class="logoImg" src="images/logo1.png"></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cv.html">CV</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="tasklist.html">Tasklist</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" href="stories.html">Stories</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" href="#pills-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                
+                </div>
+            </header>
 
-                <ul id="topnav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="tasklist.html">Tasklist</a></li>
-                    <li><a class="active" href="stories.html">Stories</a></li>
-                    <li><a href="contactform.html">Contact</a></li>
-                </ul>
-            </div>
+            <div class="container">
+                <div id="main_content">
 
-            <h1>This is a page for Short Stories</h1>
-            
-            <div class="Pads">
-                <h2>Story written: 22/03/2020</h2>
-                <h3><strong><em>Story Prompt: </em></strong>It was that fleeting hour of the day when the moon and sun are high and bright at the same time. Like many things in my life, these summer nights wouldn't last much longer. I sat quietly on a...</h3>
-                <p>
-                    ... tree stump overlooking the villages and bay area. The wind rustled through the trees as it climbed up the hill and brought cherry blossom petals with it. The sky was turning a golden red colour. I looked out over the village as the people started to return to normal. My attention was drawn to a dragonfly as it buzzed through the air amongst the cherry blossom petals. It landed gently on my hat which rested atop the makeshift grave I made for the old couple who looked after me.<br><br>
-                    A faint smile crept across my face. Their generosity and kindness was more than I deserved or could’ve hoped for. At least their house remained standing, I thought as I looked back towards it just in time to see part of the chimney fall through the front porch, well most of it anyway.<br><br>
-                    Thinking back like this made no sense. It always gets me so angry. It always ends up with those who show me kindness dying. Dying to hide me. Dying to protect me. For what? Their book tells a story and I’m the bad guy? All I’ve ever done is run. All they’ve done is hunt, preach and persecute. Just because I have a mark. The mark which ends it all apparently. Allegedly.<br><br>
-                    My existence would mark the end of their rule. So made sense, I guess. Ending me would sort out all their problems. But this seemed different. They were either trying to catch me or stop me from running. <br><br>
-                    So now it makes sense. Time to stop running. Fight back to end them before they end me.  
-                </p>
+                    <li class="selected" id="page1" onclick="change_tab(this.id);">Story 1</li>
+                    <li class="notselected" id="page2" onclick="change_tab(this.id);">Story 2</li>
+                    <li class="notselected" id="page3" onclick="change_tab(this.id);">Story 3</li>
+                    
+                    <div class='hidden_desc' id="page1_desc">
+                        <h2>Story written: 22/03/2020</h2>
+                        <h4><strong><em>Prompt: </em></strong>It was that fleeting hour of the day when the moon and sun are high and bright at the same time. Like many things in my life, these summer nights wouldn't last much longer. I sat quietly on a...</h4>
+                        <p>
+                            ... tree stump overlooking the villages and bay area. The wind rustled through the trees as it climbed up the hill and brought cherry blossom petals with it. The sky was turning a golden red colour. I looked out over the village as the people started to return to normal. My attention was drawn to a dragonfly as it buzzed through the air amongst the cherry blossom petals. It landed gently on my hat which rested atop the makeshift grave I made for the old couple who looked after me.<br><br>
+                            A faint smile crept across my face. Their generosity and kindness was more than I deserved or could’ve hoped for. At least their house remained standing, I thought as I looked back towards it just in time to see part of the chimney fall through the front porch, well most of it anyway.<br><br>
+                            Thinking back like this made no sense. It always gets me so angry. It always ends up with those who show me kindness dying. Dying to hide me. Dying to protect me. For what? Their book tells a story and I’m the bad guy? All I’ve ever done is run. All they’ve done is hunt, preach and persecute. Just because I have a mark. The mark which ends it all apparently. Allegedly.<br><br>
+                            My existence would mark the end of their rule. So made sense, I guess. Ending me would sort out all their problems. But this seemed different. They were either trying to catch me or stop me from running. <br><br>
+                            So now it makes sense. Time to stop running. Fight back to end them before they end me.  
+                        </p>
+                    </div>
+                   
+                    <div class='hidden_desc' id="page2_desc">
+                        <h2>Story written: 23/03/2020</h2>
+                        <h4><strong><em>Prompt: </em></strong> It looked like a shell, half buried, but as she dug through the sand around its edges, she found it was something completely different, something she’d never seen before and thought only existed in stories. She had to be imaging—it simply couldn’t be a...</h4>
+                        <p>                          
+                            spaceship. This kind of thing isn’t something that can be found at the beach, let alone found in this country. Even though she never thought of this area in any significant way before, as she continued to dig, she wondered why now? She brought her dog for walks on this beach plenty of times before. The edges became clearer as she dug further down. The shape became more defined as she dug around it, using the edges as a guide.<br><br>
+                            When finished, she stood up and took a look around the beach. At this time of the morning not many people are on the beach. It was still dusk before dawn. This morning’s run didn’t go quite as planned, looking at her hands, she realized she chipped a nail. Her focus then shifted to the ominous object she had just dug around.<br><br>
+                            Possibly the size of a small barrel or a couch. Maybe a small coffee table. She hoped referring to other items would take her mind off of what it actually looked like. She continued to dig around it and just as she was about to move the sand off the top s small green glow shone beside her hand. The glow started to spread along the edges. She fell back as a faint hiss erupted as the top sand began to shift and some sort of coffin shape opened.<br><br>
+                            When it fully opened, to her surprise, it was empty. Even though she didn’t fully know what to expect when it did open. There was an empty seat or bed thing, a bag and monitors. That deep green glow lit the entire space. Her attention was finally drawn to a green ball rotating and pulsing as it glowed. When she touched it, she finally remembered why she buried it here.
+                        </p>
+                    </div>
+                    
+                    <div class='hidden_desc' id="page3_desc">
+                        <h2>Story written: 25/03/2020</h2>
+                        <h4><strong><em>Prompt: </em></strong>The doughnuts sizzled as June lowered them into the grease. This was her favorite time of day: the making. The quiet before the door opened with faces and voices. She was up before the sun...</h4>
+                        <p>                         
+                            Started to fill the sky and the city started to wake up. Its not that June disliked people, obviously they were required for the business. Coffee and doughnuts were all the craze be it office workers, construction workers and, of course, the police. But this time of day was special for June, she had control of the whole kitchen and it was for this reason and this reason alone that this was her favorite time of day.<br><br>
+                            As the new doughnuts began sizzling in the grease, she began to powder the ring doughnuts. While placing them on their tray and storing them, June began preparing the glaze for the doughnuts currently cooking. She looked up to do a check on the rest of the café. The cutlery was full, napkin holders were full and chairs are placed with enough space. Perfect. June wanted all her time spent in the kitchen making doughnuts. Next will be the filling.<br><br>
+                            Just before she went back to work, June noticed something out of the corner of her eye. She lifted the doughnuts out of the grease and gave them a shake. June placed them on a tray before going out to the tables. Keeping her eyes focused on the same spot as she walked, she became uneasy. This was a new feeling at this time of the morning, but she was finally stood in front of a painting in the café. The painting was of a summer kitchen but she couldn’t put her finger on what was wrong.<br><br>
+                            Suddenly a voice exclaimed, “What are you doing out of your painting!?”<br><br>
+                            Painting title: “June The Baker”
+                        </p>
+                    </div>
+                    
+                    <div id="page_content">
+                        <h2>Story written: 22/03/2020</h2>
+                        <h4><strong><em>Prompt: </em></strong>It was that fleeting hour of the day when the moon and sun are high and bright at the same time. Like many things in my life, these summer nights wouldn't last much longer. I sat quietly on a...</h4>
+                        <p>
+                            ... tree stump overlooking the villages and bay area. The wind rustled through the trees as it climbed up the hill and brought cherry blossom petals with it. The sky was turning a golden red colour. I looked out over the village as the people started to return to normal. My attention was drawn to a dragonfly as it buzzed through the air amongst the cherry blossom petals. It landed gently on my hat which rested atop the makeshift grave I made for the old couple who looked after me.<br><br>
+                            A faint smile crept across my face. Their generosity and kindness was more than I deserved or could’ve hoped for. At least their house remained standing, I thought as I looked back towards it just in time to see part of the chimney fall through the front porch, well most of it anyway.<br><br>
+                            Thinking back like this made no sense. It always gets me so angry. It always ends up with those who show me kindness dying. Dying to hide me. Dying to protect me. For what? Their book tells a story and I’m the bad guy? All I’ve ever done is run. All they’ve done is hunt, preach and persecute. Just because I have a mark. The mark which ends it all apparently. Allegedly.<br><br>
+                            My existence would mark the end of their rule. So made sense, I guess. Ending me would sort out all their problems. But this seemed different. They were either trying to catch me or stop me from running. <br><br>
+                            So now it makes sense. Time to stop running. Fight back to end them before they end me.  
+                        </p>
+                    </div>                    
+                </div>
+            </div>        
+
+            <div class="container">
+                <footer>
+                    <p><strong> Mr. Jamie Chambers <a href="thisismyemail@thisisanemail.com">thisismyemail@thisisanemail.com</a></strong></p>
+                </footer>
             </div>
-        </div>
+        </div>      
+
+        <!-- Script for multi-tab -->
+        <script>
+            function change_tab(id)
+            {
+            document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+            document.getElementById("page1").className="notselected";
+            document.getElementById("page2").className="notselected";
+            document.getElementById("page3").className="notselected";
+            document.getElementById(id).className="selected";
+            }
+        </script>       
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>            
     </body>
 </html>
