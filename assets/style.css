@@ -69,6 +69,40 @@ footer {
     max-width: 80%;
  }
 
+ /* Button for Modal */
+ .btn-mod {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+ .btn-primary{
+  color: #fff;
+  background-color: cadetblue;
+  border-color:  cadetblue;
+}
+
+.btn-primary:hover{
+  color: #fff;
+  background-color: rgb(42, 224, 224);
+  border-color:  rgb(42, 224, 224)e;
+}
+
+.btn-secondary{
+  color: #fff;
+  background-color: rgb(209, 78, 106);
+  border-color:  rgb(209, 78, 106);
+}
+
+.btn-secondary:hover{
+  color: #fff;
+  background-color: rgb(161, 36, 63);
+  border-color:  rgb(161, 36, 63);
+}
+
 /* table stuff for CV */
  table {
     border: 1px solid black;
@@ -172,7 +206,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #23f5ea;
 }
-
 
 /* CSS for responsive gallery */
 /* Parent Container */
